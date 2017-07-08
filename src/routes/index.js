@@ -48,6 +48,10 @@ const routes = {
       path: '/draft-order',
       load: () => import('./draft-order'),
     },
+    {
+      path: '/random-divisions',
+      load: () => import('./random-divisions'),
+    },
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
     {
