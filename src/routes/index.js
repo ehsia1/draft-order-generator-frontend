@@ -52,6 +52,7 @@ const routes = {
       path: '/random-divisions',
       load: () => import('./random-divisions'),
     },
+    require('./leagues').default,
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
     {
