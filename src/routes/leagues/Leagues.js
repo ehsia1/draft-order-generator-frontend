@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Leagues.css';
+import Link from '../../components/Link';
 
 class Leagues extends React.Component {
   static propTypes = {
@@ -32,6 +33,10 @@ class Leagues extends React.Component {
   render() {
     return <div>
       <h1>{this.props.title}</h1>
+      <ul>
+        <li>list of leagues</li>
+      </ul>
+      <Link className={s.link} to="/add">Add League</Link><br/>
     </div>
   }
 
